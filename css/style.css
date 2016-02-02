@@ -1,0 +1,61 @@
+p {
+	font-family:Impact;
+	font-size:16px;
+    color: #4682B4;
+}
+
+h3 {
+	font-family:'Franklin Gothic Medium';
+    font-size: 40px;
+	color:#36648b;
+	text-align:center;
+    margin-top: 60px;
+   
+}
+
+img {
+    width: 300px;
+    height: auto;
+    margin-left: 200px;
+    margin-top: 50px;
+    border-radius: 150px;
+
+}
+
+#contents_top {
+	position: relative;
+	top: -320px;
+    margin-left: 700px;
+
+}
+
+#contents_below {
+    position: relative;
+	top: -235px;
+    margin-left: -650px;
+}
+
+ul {
+    font-family: Helvetica;
+    font-size: 16;
+    color: #484848;
+}
+
+#location {
+    font-family: Helvetica;
+    
+    font-size: 16;
+}
+
+span {
+	color:#484848;
+	font-family: Helvetica;
+    font-size: 16;
+}
+
+header {
+    background-color: bisque;
+    padding: 0.1px;
+}
+
+
