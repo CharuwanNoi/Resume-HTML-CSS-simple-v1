@@ -1,81 +1,45 @@
-p {
-    position: relative;
-	font-family:Impact;
-	font-size:16px;
-    color: #4682B4;
+/*
+#home {
+    margin-top: -20px;
+}
+*/
+
+header {
+    margin-top: -20px;
+    background: #18bc90;
 }
 
+/*
 h3 {
-	font-family:'Franklin Gothic Medium';
-    font-size: 40px;
-	color:#36648b;
-	text-align:center;
-    margin-top: 60px;
+    display: block;
+    font-weight: 700;
+    font-size: 50px;
+}
+*/
+
+#about{
+    text-align: center;
    
 }
 
-img {
-    position: relative; 
-    float: left;
-    margin: 5% 5% 5% 5%;
-    width: 40%;
-    height: auto;
+ #work {
+    text-align: center;
     
-/*
-    position: relative;
-    width: 30%;
-    height: auto;
-    margin-left: 200px;
-    margin-top: 50px;
-    border-radius: 150px;
-*/
-
 }
 
-#my_photo {
-/*    margin-left: 20px auto;*/
+#contact {
+    text-align: center;
+   
 }
 
-#contents_top {
-    clear: both;
-/*	position: relative;*/
-/*	top: -320px;*/
-    margin-left: 50%;
-    margin-top: -50%;
-    
-
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-#contents_below {
-/*    position: relative;*/
-	top: -235px;
-    margin-left: -650px ;
+section {
+    padding-top: 250px;
+    padding-bottom: 250px;
 }
-
-ul {
-    position: relative;
-    font-family: Helvetica;
-    font-size: 16;
-    color: #484848;
-}
-
-#location {
-    position: relative;
-    font-family: Helvetica;
-    
-    font-size: 16;
-}
-
-span {
-    position: relative;
-	color:#484848;
-	font-family: Helvetica;
-    font-size: 16;
-}
-
-header {
-    background-color: bisque;
-    padding: 0.1px;
-}
-
-

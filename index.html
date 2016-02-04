@@ -3,72 +3,108 @@
 <head>
 <title>Resume</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 
 <body>
-    
-    <header>
-        <h3>Charuwan Ruanmoei</h3>
+
+   <nav class="navbar navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+     
+      <a class="navbar-brand" href="#">Charuwan Ruanmoei</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#head">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#work">WORK</a></li>  
+        <li><a href="#contact">CONTACT</a></li>
+          
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <header id="head">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-8">
+                    <img id="my_photo" src="photo.jpg" class="img-responsive" alt="Responsive image">
+                </div>
+                
+            </div>
+        
+        </div>
     </header>
     
-    <div id="my_photo">
-        <img src = "photo.jpg" >
-    </div>
-        
-     
-     <div id="contents_top">
-         <p id="location"> <span> 222 Moo4 Tambon Mae-Sam, Srisatchanalai Sukhothai 64130</span> <br>
-             Telephone numbers: <span> (087) 574 – 0434</span> <br>
-             E-mail address: <span>charuwan_55@hotmail.co.th </span><br>
-         </p>
-         
-         <div id="education">
-            <p> Education </p>
-            <ul>
-                <li>Bachelor degree Major Computer Science, 	GPA 2.79 </li>
-                <li>Faculty of Science, Naresuan University (2012-2015)	 </li>
-                <li>High School: Muangchaliang School. (2006-2011)	GPA 3.77 </li>
-            </ul>
-         </div>
-         
-        <p>Training </p>
-        <ul>
-            <li>Writing “Laravel 5 Workshop” by 	27 June 2015 <br>
-	           Mr. Natthawut Hemathulin</li> 
-	        <li> Writing "Android Workshop" by 	8 August 2015 <br>
-	           Mr. Natthawut Hemathulin </li>
-        </ul>
-         
-        <p>Work Experience</p>
-            <ul>
-                <li>Teacher assistant for Computer Architecture course, 2015.</li>
-                <li>Teacher assistant for Mobile Application Development <br>              
-                           (Swift Programming Language) course, 2015. </li>
-            </ul>
-         
-        <p>Reference</p>
-            <ul>
-                <li>Dr. Antony Harfield </li>
-                <li>Lecturer in Department of Computer Science and Information Technology at Naresuan University </li> 
-                <li>Email: antonyh@nu.ac.th </li>
-                <li> Telephone: 088 519 0402 </li>
-            </ul>
-         
-          <div id="contents_below">
-            <p> Computer skill  </p>
-                <ul>	
-                    <li>Programming Languages: Swift, Java, Visual Basic, SQL, <br>	           
-                        HTML & CSS	</li>							    
-                    <li>Programs: Microsoft Office Word, Power Points, Excel, Access, <br>
-                        Adobe Photoshop, xCode </li>
-                </ul>
-         
-            <p>Final year project </p>
-                <ul>
-                    <li>Learning Thai on mobile for children on the  <br>
-                                Operating system iOS. </li>
-                </ul>
-           </div>
-    </div> 
- </body>
+    <section id="about">
+        <div class="container">
+             <div class="row">
+                 <div class="col-md-12 text-center">
+                    <h3>Education	</h3>
+                    <p>
+                        Bachelor’s degree (2012-2015): Major Computer Science, 	<br>
+	                    Faculty of Science, Naresuan University <br>
+	                    High School (2006-2011): Muangchaliang School	<br>
+                     </p>
+                    <h3>Computer skill</h3>
+                     <p>
+                        Programming Languages: Swift, Java, Visual Basic, SQL, 	      
+                        Programs: Microsoft Office Word, Power Points, Excel, Access, 
+                        Adobe Photoshop, xCode
+
+                    </p>
+                 </div>
+
+                 
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="work">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-12 text-center">
+                    <h3>Work Experience</h3>
+                    <p>
+                        Teacher assistant for Fundamentals of Programming course, 2015. 	<br>
+                        Teacher assistant for Mobile Application Development   	<br>          
+                        (Swift Programming Language) course, 2015.	<br>
+
+                    </p>
+                 </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3>LOCATION </h3>
+                        <p>
+                            222 Moo4 Tambon Mae-Sam, Srisatchanalai Sukhothai 64130 <br>
+                            Telephone numbers:  (087) 574 – 0434 <br>
+                            E-mail address: charuwan_55@hotmail.co.th <br>
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    
+    
+    
+ <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
 </html>
