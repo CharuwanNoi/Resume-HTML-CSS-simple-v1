@@ -3,40 +3,52 @@
 <head>
 <title>Resume</title>
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<!--    navigation-->
+  <nav class="navbar navbar navbar-inverse navbar-fixed-top">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">Charuwan Ruanmoei</a>
+                        </div>
 
-   <nav class="navbar navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-     
-      <a class="navbar-brand" href="#">Charuwan Ruanmoei</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
       
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#head">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#work">WORK</a></li>  
-        <li><a href="#contact">CONTACT</a></li>
-          
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+                          <ul class="nav navbar-nav navbar-right">
+                            <li class="page-scroll">
+                                <a href="#head">HOME</a></li>
+                            <li class="page-scroll">
+                                <a href="#about">ABOUT</a></li>
+                            <li class="page-scroll">
+                                <a href="#work">WORK</a></li>  
+                            <li class="page-scroll">
+                                <a href="#contact">CONTACT</a></li>
+                          </ul>
+                        </div><!-- /.navbar-collapse -->
+                      </div><!-- /.container-fluid -->
+                    </nav>
+            
+<!--   header-->
     <header id="head">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-8">
-                    <img id="my_photo" src="photo.jpg" class="img-responsive" alt="Responsive image">
+            
+            <div class="row" id="myImg">
+                <div class="col-md-6" >
+                    <img id="my_photo" src="photo.jpg" class="img-responsive" alt>
+<!--                    <h4>MY NAME IS CHARUWAN RUANMOEI</h4>-->
                 </div>
                 
+                <div class="col-md-6" id="name">
+                    <h2>MY NAME IS CHARUWAN RUANMOEI </h2>
+                </div>
             </div>
         
         </div>
@@ -44,15 +56,15 @@
     
     <section id="about">
         <div class="container">
-             <div class="row">
+             <div class="row" id="aboutvertical">
                  <div class="col-md-12 text-center">
-                    <h3>Education	</h3>
+                    <h3 id="title">Education	</h3>
                     <p>
                         Bachelor’s degree (2012-2015): Major Computer Science, 	<br>
 	                    Faculty of Science, Naresuan University <br>
 	                    High School (2006-2011): Muangchaliang School	<br>
                      </p>
-                    <h3>Computer skill</h3>
+                    <h3 id="title">Computer skill</h3>
                      <p>
                         Programming Languages: Swift, Java, Visual Basic, SQL, 	      
                         Programs: Microsoft Office Word, Power Points, Excel, Access, 
@@ -69,9 +81,9 @@
     
     <section id="work">
          <div class="container">
-             <div class="row">
+             <div class="row" id="textvertical">
                  <div class="col-md-12 text-center">
-                    <h3>Work Experience</h3>
+                    <h3 id="title">Work Experience</h3>
                     <p>
                         Teacher assistant for Fundamentals of Programming course, 2015. 	<br>
                         Teacher assistant for Mobile Application Development   	<br>          
@@ -88,7 +100,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h3>LOCATION </h3>
+                    <h3 id="title">LOCATION </h3>
                         <p>
                             222 Moo4 Tambon Mae-Sam, Srisatchanalai Sukhothai 64130 <br>
                             Telephone numbers:  (087) 574 – 0434 <br>
@@ -98,13 +110,57 @@
             </div>
         </div>
     </section>
+  
+    <footer class="text-center">
+<!--
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                    
+                    </div>
+                
+                </div>
+            
+            </div>
+        </div>
+-->
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                         Copyright © charuwan ruanmoei
+                    </div>
+                </div>
+            </div>
+        </div>
     
     
+    
+    </footer>
+    
+    <script>
+   $(document).ready(function() {
+       $('body').scrollspy({
+           target: ".navbar",
+           offset: 50
+       });
+       $("#bs-example-navbar-collapse-1 a").on('click', function(event) {
+           event.preventDefault();
+           var hash = this.hash;
+           $('html, body').animate({
+               scrollTop: $(hash).offset().top
+           }, 800, function() {
+               window.location.hash = hash;
+           });
+       });
+   });
+   </script>
 
     
     
     
  <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
 </body>
 </html>

@@ -1,21 +1,33 @@
-/*
-#home {
-    margin-top: -20px;
+img {
+/*    vertical-align: middle;*/
+    padding-top: 31px;
+    padding-bottom: 31px;
 }
-*/
+#myImg {
+    margin-top: 50px;
+}
 
 header {
-    margin-top: -20px;
+/*    margin-top: 0px;*/
     background: #18bc90;
 }
 
-/*
-h3 {
+#title {
     display: block;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 40px;
 }
-*/
+
+#textvertical {
+    padding-top: -20px;
+}
+
+#name {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 245px;
+    padding-bottom: 245px;
+}
 
 #about{
     text-align: center;
@@ -40,6 +52,21 @@ h3 {
 }
 
 section {
-    padding-top: 250px;
-    padding-bottom: 250px;
+    padding-top: 270px;
+    padding-bottom: 270px;
 }
+
+#aboutvertical {
+    margin-top: -30px;
+}
+
+footer {
+    color: white;
+    background-color: #080808;
+    padding: 20px;
+}
+
+
+body {
+      position: relative; 
+  }
