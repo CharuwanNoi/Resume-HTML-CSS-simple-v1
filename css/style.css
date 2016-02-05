@@ -29,19 +29,28 @@ header {
     padding-bottom: 245px;
 }
 
-#about{
-    text-align: center;
-   
+#navi-right {
+    margin-right: 50px;
+}
+
+#test{
+    background-image: url(IMG.png);
+}
+#about {
+/*    text-align: center;*/
+    
+/*   background-color:#18bc90;*/
+    background-image: url(IMG.png);
 }
 
  #work {
     text-align: center;
-    
+    background-color:#18bc90; 
 }
 
 #contact {
     text-align: center;
-   
+    background-image: url(IMG.png);
 }
 
 .container {
@@ -70,3 +79,4 @@ footer {
 body {
       position: relative; 
   }
+
