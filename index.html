@@ -3,69 +3,189 @@
 <head>
 <title>Resume</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  
 </head>
 
-<body>
-    
-    <header>
-        <h3>Charuwan Ruanmoei</h3>
-    </header>
-  
-    <img src = "photo.jpg" >
-     
-     <div id="contents_top">
-         <p id="location"> <span> 222 Moo4 Tambon Mae-Sam, Srisatchanalai Sukhothai 64130</span> <br>
-             Telephone numbers: <span> (087) 574 – 0434</span> <br>
-             E-mail address: <span>charuwan_55@hotmail.co.th </span><br>
-         </p>
-         
-         <div id="education">
-            <p> Education </p>
-            <ul>
-                <li>Bachelor degree Major Computer Science, 	GPA 2.79 </li>
-                <li>Faculty of Science, Naresuan University (2012-2015)	 </li>
-                <li>High School: Muangchaliang School. (2006-2011)	GPA 3.77 </li>
-            </ul>
-         </div>
-         
-        <p>Training </p>
-        <ul>
-            <li>Writing “Laravel 5 Workshop” by 	27 June 2015 <br>
-	           Mr. Natthawut Hemathulin</li> 
-	        <li> Writing "Android Workshop" by 	8 August 2015 <br>
-	           Mr. Natthawut Hemathulin </li>
-        </ul>
-         
-        <p>Work Experience</p>
-            <ul>
-                <li>Teacher assistant for Computer Architecture course, 2015.</li>
-                <li>Teacher assistant for Mobile Application Development <br>              
-                           (Swift Programming Language) course, 2015. </li>
-            </ul>
-         
-        <p>Reference</p>
-            <ul>
-                <li>Dr. Antony Harfield </li>
-                <li>Lecturer in Department of Computer Science and Information Technology at Naresuan University </li> 
-                <li>Email: antonyh@nu.ac.th </li>
-                <li> Telephone: 088 519 0402 </li>
-            </ul>
-         
-          <div id="contents_below">
-            <p> Computer skill  </p>
-                <ul>	
-                    <li>Programming Languages: Swift, Java, Visual Basic, SQL, <br>	           
-                        HTML & CSS	</li>							    
-                    <li>Programs: Microsoft Office Word, Power Points, Excel, Access, <br>
-                        Adobe Photoshop, xCode </li>
-                </ul>
-         
-            <p>Final year project </p>
-                <ul>
-                    <li>Learning Thai on mobile for children on the  <br>
-                                Operating system iOS. </li>
-                </ul>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<!--    navigation-->
+  <nav class="navbar navbar navbar-inverse navbar-fixed-top">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            
+                            <a class="navbar-brand" href="#">RESUME</a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      
+                          <ul class="nav navbar-nav navbar-right">
+                            <li class="page-scroll">
+                                <a href="#head">HOME</a></li>
+                            <li class="page-scroll">
+                                <a href="#about">ABOUT</a></li>
+                            <li class="page-scroll">
+                                <a href="#work">WORK</a></li>  
+                            <li class="page-scroll">
+                                <a href="#contact">CONTACT</a></li>
+                          </ul>
+                        </div><!-- /.navbar-collapse -->
+                      </div><!-- /.container-fluid -->
+                    </nav>
+            
+<!--   header-->
+    <header id="head">
+        
+        
+        <div class="container">
+            
+            <div class="row" id="myImg">
+                <div class="col-md-6" >
+                    <img id="my_photo" src="photo.jpg" class="img-responsive" >
+
+                </div>
+                
+                <div class="col-md-6" id="name">
+                    <h2 id="title">CHARUWAN RUANMOEI </h2>
+                </div>
             </div>
-    </div> 
- </body>
+        
+        </div>
+    </header>
+
+    <section id="about" >
+        
+        <div class="container">
+             <div class="row" id="aboutvertical" background="IMG.png">
+                 <div class="col-md-12 text-center">
+                    <h3 id="title">Education	</h3>
+                    <p>
+                        Bachelor’s degree (2012-2015): Major Computer Science, 	<br>
+	                    Faculty of Science, Naresuan University <br>
+	                    High School (2006-2011): Muangchaliang School	<br>
+                     </p>
+                    <h3 id="title">Computer skill</h3>
+                     <p>
+                        Programming Languages: Swift, Java, Visual Basic, SQL, 	      
+                        Programs: Microsoft Office Word, Power Points, Excel, Access, 
+                        Adobe Photoshop, xCode
+
+                    </p>
+                 </div>
+
+                 
+            </div>
+        </div>
+    </section>
+  
+    
+    
+    <section id="work">
+         <div class="container">
+             <div class="row" id="textvertical">
+                 <div class="col-md-12 text-center">
+                    <h3 id="title">Work Experience</h3>
+                    <p>
+                        Teacher assistant for Fundamentals of Programming course, 2015. 	<br>
+                        Teacher assistant for Mobile Application Development          
+                        (Swift Programming Language) course, 2015.	<br>
+
+                    </p>
+                     
+                    <h3 id="title">Final year project</h3>
+                     <p>Learning Thai on mobile for children on the 
+                        Operating system iOS.
+                    </p>
+                 </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 id="title">LOCATION </h3>
+                        <p>
+                            222 Moo4 Tambon Mae-Sam, Srisatchanalai Sukhothai 64130 <br>
+                            Telephone numbers:  (087) 574 – 0434 <br>
+                            E-mail address: charuwan_55@hotmail.co.th <br>
+                        </p>
+                </div>
+                
+                <div class="col-md-12 text-center">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.instagram.com/nednoii_nednoii/"><i class="fa fa-instagram fa-2x" style="font-size:50px;color:#3F729B"></i></a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://github.com/CharuwanNoi"><i class="fa fa-github fa-2x" style="font-size:50px;color:#444444;"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/charuwan-ruanmoei-3b08a0111?trk=hp-identity-name"><i class="fa fa-linkedin fa-2x" style="font-size:50px;color:#007BB6"></i></a>
+                        </li>
+                        
+                        
+                      
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+  
+    <footer class="text-center">
+
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                         Copyright © charuwan ruanmoei
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    </footer>
+    
+    <script>
+   $(document).ready(function() {
+       $('body').scrollspy({
+           target: ".navbar",
+           offset: 50
+       });
+       $("#bs-example-navbar-collapse-1 a").on('click', function(event) {
+           event.preventDefault();
+           var hash = this.hash;
+           $('html, body').animate({
+               scrollTop: $(hash).offset().top
+           }, 800, function() {
+               window.location.hash = hash;
+           });
+       });
+   });
+   </script>
+
+    
+    
+    
+ <!-- Latest compiled and minified JavaScript -->
+    
+</body>
 </html>

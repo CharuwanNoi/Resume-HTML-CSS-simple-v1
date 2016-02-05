@@ -1,61 +1,82 @@
-p {
-	font-family:Impact;
-	font-size:16px;
-    color: #4682B4;
-}
-
-h3 {
-	font-family:'Franklin Gothic Medium';
-    font-size: 40px;
-	color:#36648b;
-	text-align:center;
-    margin-top: 60px;
-   
-}
-
 img {
-    width: 300px;
-    height: auto;
-    margin-left: 200px;
+/*    vertical-align: middle;*/
+    padding-top: 31px;
+    padding-bottom: 31px;
+}
+#myImg {
     margin-top: 50px;
-    border-radius: 150px;
-
-}
-
-#contents_top {
-	position: relative;
-	top: -320px;
-    margin-left: 700px;
-
-}
-
-#contents_below {
-    position: relative;
-	top: -235px;
-    margin-left: -650px;
-}
-
-ul {
-    font-family: Helvetica;
-    font-size: 16;
-    color: #484848;
-}
-
-#location {
-    font-family: Helvetica;
-    
-    font-size: 16;
-}
-
-span {
-	color:#484848;
-	font-family: Helvetica;
-    font-size: 16;
 }
 
 header {
-    background-color: bisque;
-    padding: 0.1px;
+/*    margin-top: 0px;*/
+    background: #18bc90;
 }
 
+#title {
+    display: block;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#textvertical {
+    padding-top: -20px;
+}
+
+#name {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 245px;
+    padding-bottom: 245px;
+}
+
+#navi-right {
+    margin-right: 50px;
+}
+
+#test{
+    background-image: url(IMG.png);
+}
+#about {
+/*    text-align: center;*/
+    
+/*   background-color:#18bc90;*/
+    background-image: url(IMG.png);
+}
+
+ #work {
+    text-align: center;
+    background-color:#18bc90; 
+}
+
+#contact {
+    text-align: center;
+    background-image: url(IMG.png);
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+section {
+    padding-top: 270px;
+    padding-bottom: 270px;
+}
+
+#aboutvertical {
+    margin-top: -30px;
+}
+
+footer {
+    color: white;
+    background-color: #080808;
+    padding: 20px;
+}
+
+
+body {
+      position: relative; 
+  }
 
